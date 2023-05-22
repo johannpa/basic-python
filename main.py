@@ -59,4 +59,13 @@ for i in range(0, NB_PERSONNES):
     age = demander_age()
     afficher_informations_personne(nom, age)
 
+    print("""
+        Vous pouvez faire ce que vous voulez ici.
+        Vous pouvez mettre autant de lignes que vous voulez.
+        Vous pouvez mettre des lignes vides.
+        Vous pouvez mettre des lignes avec du code.
+            Vous pouvez placer les lignes comme vous voulez.
+                Selon comment on place les lignes elles seront placées de la même façon.
+    """)
+
 
