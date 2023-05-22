@@ -15,7 +15,7 @@ def demander_age():
             print("ERREUR: Vous devez rentrer un nombre pour l'âge.")
     return age_int
 
-def afficher_informations_personne(nom, age):
+def afficher_informations_personne(nom, age, taille = 0):
     print()
     print(f"Vous vous appelez {nom}. Vous avez {age} ans.")
     print(f"L'année prochaine vous aurez {age + 1} ans.")
@@ -34,6 +34,12 @@ def afficher_informations_personne(nom, age):
     else:
         print("Vous êtes mineur.")
 
+    # afficher la taille
+    # taille = 1.75
+    # print(type(taille))
+    if not taille == 0:
+        print(f"Vous mesurez {taille} mètres.")
+
 # nom = demander_nom()
 # nom1 = demander_nom()
 
@@ -44,7 +50,7 @@ def afficher_informations_personne(nom, age):
 # afficher_informations_personne(nom1, age1)
 
 # c'est une constante, on ne peut pas la modifier. Les constantes sont en majuscule. Mais en python les constantes n'existent pas.
-NB_PERSONNES = 3
+NB_PERSONNES = 1
 
 # la boucle for
 for i in range(0, NB_PERSONNES):
